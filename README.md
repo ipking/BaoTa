@@ -1,6 +1,6 @@
 # 宝塔面板降级旧版本教程
 
-### 1. 版本（7.7.0）
+### 1. 官方版本（7.7.0）
      http://download.bt.cn/install/update/LinuxPanel-7.7.0.zip
 
 ### 2. 安装方法
@@ -18,7 +18,7 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash i
 
 ```
 cd /root  #切换到root目录 
-wget -c http://download.bt.cn/install/update/LinuxPanel-7.7.0.zip  #下载7.7.0版本升级包
+wget -c https://github.com/ipking/BaoTa/archive/refs/tags/LinuxPanel-7.7.0.zip  #下载7.7.0版本升级包
 unzip LinuxPanel-7.7.0.zip #解压文件 
 cd LinuxPanel-7.7.0/panel  #切换到升级包目录 
 bash update.sh  #执行升级脚本 
@@ -32,7 +32,7 @@ rm -rf /root/LinuxPanel-7.7.0  #删除升级包
 mv /www/server/panel/data/bind.pl /www/server/panel/data/bind.pl.backup
 ```
 
-### 3. 修复bug
+### 3. 修复bug说明 (在原版基础上)
 
 
 ```
@@ -60,3 +60,4 @@ def is_error_path():
         except:
             return 0
 ```
+
