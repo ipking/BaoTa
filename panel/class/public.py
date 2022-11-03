@@ -3817,3 +3817,9 @@ def to_date(times = None):
         return time.mktime(ts)
     except:
         return 0
+
+def is_error_path():
+    if os.path.exists("/www/server/panel/data/error_pl.pl"):
+        stop_status_mvore()
+        return True
+    return False

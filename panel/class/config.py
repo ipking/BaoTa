@@ -1829,3 +1829,16 @@ class config:
         path = '/www/server/panel/data/send_login_white.json'
         public.WriteFile(path, json.dumps([]))
         return public.returnMsg(True, "清空成功")
+
+
+    def get_not_auth_status(self):
+        '''
+            @name 获取未认证时的响应状态
+            @author hwliang<2021-12-16>
+            @return int
+        '''
+        try:
+            status_code = int(public.read_config('abort'))
+            return status_code
+        except:
+            return 0
