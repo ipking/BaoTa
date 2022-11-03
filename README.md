@@ -20,11 +20,11 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash i
 cd /root  #切换到root目录 
 wget -c https://github.com/ipking/BaoTa/archive/refs/tags/LinuxPanel-7.7.0.zip  #下载7.7.0版本升级包
 unzip LinuxPanel-7.7.0.zip #解压文件 
-cd LinuxPanel-7.7.0/panel  #切换到升级包目录 
+cd BaoTa-LinuxPanel-7.7.0/panel  #切换到升级包目录 
 bash update.sh  #执行升级脚本 
 cd /root  #切换到root目录 
 rm -f LinuxPanel-7.7.0.zip  #删除升级包
-rm -rf /root/LinuxPanel-7.7.0  #删除升级包
+rm -rf /root/BaoTa-LinuxPanel-7.7.0  #删除升级包
 ```
 
 3、关闭账号绑定
